@@ -1,0 +1,25 @@
+name: Danger
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  danger:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+
+      - name: Install Danger
+        run: gem install danger
+
+      - name: Run Danger
+        uses: danger/danger-action@v6
