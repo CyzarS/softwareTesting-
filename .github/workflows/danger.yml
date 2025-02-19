@@ -22,4 +22,9 @@ jobs:
         run: gem install danger
 
       - name: Run Danger
-        uses: danger/danger-action@v6
+        uses: MeilCli/danger-action@v6
+        with:
+          plugins_file: 'Gemfile'
+          install_path: 'vendor/bundle'
+          danger_file: 'Dangerfile'
+          danger_id: 'danger-pr'
