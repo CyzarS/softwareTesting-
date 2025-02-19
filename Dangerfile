@@ -1,5 +1,5 @@
 
-commit_message = git.commits.first[:message]
+commit_message = git.commits.first.message
 lines = commit_message.split("\n")
 
 commit_title = lines.first
