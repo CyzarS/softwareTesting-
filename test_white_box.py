@@ -54,8 +54,6 @@ class TestBankingSystem(unittest.TestCase):
         result = self.banking_system.transfer_money(sender, receiver, amount, transaction_type)
         self.assertFalse(result)
 
-
-
 if __name__ == "__main__":
     unittest.main()
 

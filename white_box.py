@@ -689,4 +689,4 @@ class ShoppingCart:
         print(f"Total: ${total}")
         print("Checkout completed. Thank you for shopping!")
 
-#fin de white_box.py
+# fin de white_box.py
