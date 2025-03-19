@@ -1,6 +1,7 @@
 
 import unittest
-from white_box import BankingSystem, BankAccount
+from white_box import BankingSystem
+
 
 class TestBankingSystem(unittest.TestCase):
     def setUp(self):
@@ -54,5 +55,8 @@ class TestBankingSystem(unittest.TestCase):
         self.assertFalse(result)
 
 
+
 if __name__ == "__main__":
     unittest.main()
+
+# Fin del archivo test_white.box.py

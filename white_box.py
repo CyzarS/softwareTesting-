@@ -688,3 +688,5 @@ class ShoppingCart:
         total = sum(item["product"].price * item["quantity"] for item in self.items)
         print(f"Total: ${total}")
         print("Checkout completed. Thank you for shopping!")
+
+#fin de white_box.py
